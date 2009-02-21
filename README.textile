@@ -2,7 +2,32 @@ h2. Cucumber Task
 
 blah. blah.
 
-  h3. Introduction
+h3. Introduction
+  
+h3. Installation
+  
+h4. Cucumber
+
+
+h3. Webrat
+
+Webrat is an Ruby-based acceptance testing library for web applications.
+
+It depends on the to XML libraries which can be installed using:
+
+  sudo apt-get install libxslt1-dev libxml2-dev
+
+You can install Webrat as a gem or as a plugin. The gem is more stable because it follows a release schedule 
+instead of seeing every change that is pushed to Github.  
+
+  sudo gem install webrat
+
+  or
+
+  git submodule add git://github.com/brynary/webrat.git vendor/plugins/webrat
+  git submodule init
+  
+
 
 h2. Textile Examples
 
