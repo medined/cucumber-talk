@@ -1,4 +1,4 @@
-h2. Cucumber Task
+h2. Cucumber Talk
 
 blah. blah.
 
@@ -6,16 +6,24 @@ h3. Introduction
   
 h3. Installation
   
+h4. Dependencies
+
+Like most software, Cucumber and Webrat depend on other software. Let's install them first.
+
+  sudo apt-get install libxslt1-dev libxml2-dev
+  sudo gem install term-ansicolor treetop diff-lcs nokogiri builder
+
+h4. RSpec
+
+  sudo gem install rspec rspec-rails
+
 h4. Cucumber
 
+  sudo gem install cucumber
 
 h3. Webrat
 
 Webrat is an Ruby-based acceptance testing library for web applications.
-
-It depends on the to XML libraries which can be installed using:
-
-  sudo apt-get install libxslt1-dev libxml2-dev
 
 You can install Webrat as a gem or as a plugin. The gem is more stable because it follows a release schedule 
 instead of seeing every change that is pushed to Github.  
@@ -26,56 +34,9 @@ instead of seeing every change that is pushed to Github.
 
   git submodule add git://github.com/brynary/webrat.git vendor/plugins/webrat
   git submodule init
+
+h3. Configuration
+  
+  script/generate cucumber
   
 
-
-h2. Textile Examples
-
-Sample Table.
-
-|_. Name|_. Age|_. Height|
-|Tom|29|5'9"|
-|Chris|27|6'0"|
-
-h4. Pay Attention to my H4
-
-You just don't see enough ordered lists around these days.
-
-# alpha
-# beta
-# gamma
-
-Unordered lists are nice for when you don't want to prioritize things.
-
-* one
-* two
-* three
-
-It's always a good idea to quote someone famous so people think you know what you're talking about.
-
-bq. To be or not to be, that is the question
-
-If that doesn't work, just fall back on math equations. That's sure to work. (If the github implementation of textile worked as the textism.com implementation does.)
-
-a^2^ + b^2^ = c^2^
-
-Tables are a pain, huh? Just slap in some preformatted content using &lt;pre&gt; tags.
-
-<pre>size   color
- L       G
- M       R
- S       B</pre>
-
-This *is* a code repository so displaying @code@ should be easy and look good too!
-
-  def foo
-    puts 'bar'
-  end
-
-h2. Sample Header
-
-* apples
-** Granny Smith
-** Pink Lady
-* bananas
-* grapes
